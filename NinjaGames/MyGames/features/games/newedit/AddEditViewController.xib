@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddEditViewController" customModule="MyGames" customModuleProvider="target">
+            <connections>
+                <outlet property="btAddEdit" destination="G0y-kJ-J8n" id="tzn-O4-lV7"/>
+                <outlet property="btCover" destination="cto-db-qdu" id="QrJ-Pd-TmS"/>
+                <outlet property="dpReleaseDate" destination="7us-Ix-P1A" id="YNc-xv-zKC"/>
+                <outlet property="ivCover" destination="ZNh-JX-wsu" id="dsg-aG-LBQ"/>
+                <outlet property="tfConsole" destination="n01-zp-Pbh" id="dFo-PQ-0DV"/>
+                <outlet property="tfTitle" destination="2YX-X3-ydV" id="1Ay-wl-Dw7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZNh-JX-wsu">
+                    <rect key="frame" x="16" y="328" width="382" height="496"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de lançamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syB-Uf-JrJ">
+                    <rect key="frame" x="16" y="168" width="382" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do jogo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2YX-X3-ydV">
+                    <rect key="frame" x="16" y="84" width="382" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRy-Bl-Mxn">
+                    <rect key="frame" x="16" y="302" width="382" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cto-db-qdu">
+                    <rect key="frame" x="16" y="328" width="382" height="496"/>
+                    <state key="normal" title="Toque para adicionar a imagem de capa"/>
+                    <connections>
+                        <action selector="AddEditCover:" destination="-1" eventType="touchUpInside" id="wCr-AF-pcv"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome da plataforma" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n01-zp-Pbh">
+                    <rect key="frame" x="16" y="126" width="382" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="7us-Ix-P1A">
+                    <rect key="frame" x="16" y="194" width="382" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="cN9-0g-WdO"/>
+                    </constraints>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0y-kJ-J8n">
+                    <rect key="frame" x="16" y="832" width="382" height="30"/>
+                    <color key="backgroundColor" name="main"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="wBY-Ts-aok"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="ADICIONAR">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addEditGame:" destination="-1" eventType="touchUpInside" id="syO-vg-qcg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="7us-Ix-P1A" firstAttribute="trailing" secondItem="GRy-Bl-Mxn" secondAttribute="trailing" id="0wA-3b-2mo"/>
+                <constraint firstItem="cto-db-qdu" firstAttribute="width" secondItem="ZNh-JX-wsu" secondAttribute="width" id="1XB-Ya-5SZ"/>
+                <constraint firstItem="n01-zp-Pbh" firstAttribute="trailing" secondItem="syB-Uf-JrJ" secondAttribute="trailing" id="1lL-bV-IZu"/>
+                <constraint firstItem="2YX-X3-ydV" firstAttribute="trailing" secondItem="n01-zp-Pbh" secondAttribute="trailing" id="4ex-yl-zAv"/>
+                <constraint firstItem="7us-Ix-P1A" firstAttribute="leading" secondItem="GRy-Bl-Mxn" secondAttribute="leading" id="5dS-A2-iIp"/>
+                <constraint firstItem="cto-db-qdu" firstAttribute="height" secondItem="ZNh-JX-wsu" secondAttribute="height" id="5ea-yc-pet"/>
+                <constraint firstItem="7us-Ix-P1A" firstAttribute="top" secondItem="syB-Uf-JrJ" secondAttribute="bottom" constant="8" id="8EC-zv-O5e"/>
+                <constraint firstItem="GRy-Bl-Mxn" firstAttribute="trailing" secondItem="ZNh-JX-wsu" secondAttribute="trailing" id="96C-1D-AoJ"/>
+                <constraint firstItem="cto-db-qdu" firstAttribute="centerY" secondItem="ZNh-JX-wsu" secondAttribute="centerY" id="Am8-Vc-YBC"/>
+                <constraint firstItem="cto-db-qdu" firstAttribute="centerX" secondItem="ZNh-JX-wsu" secondAttribute="centerX" id="AvJ-qs-Dpi"/>
+                <constraint firstItem="G0y-kJ-J8n" firstAttribute="top" secondItem="ZNh-JX-wsu" secondAttribute="bottom" constant="8" id="HVh-10-2Em"/>
+                <constraint firstItem="cto-db-qdu" firstAttribute="trailing" secondItem="G0y-kJ-J8n" secondAttribute="trailing" id="IqD-pe-uKJ"/>
+                <constraint firstItem="syB-Uf-JrJ" firstAttribute="leading" secondItem="7us-Ix-P1A" secondAttribute="leading" id="N7J-C3-GCV"/>
+                <constraint firstItem="2YX-X3-ydV" firstAttribute="leading" secondItem="n01-zp-Pbh" secondAttribute="leading" id="NPX-8O-eQM"/>
+                <constraint firstItem="n01-zp-Pbh" firstAttribute="top" secondItem="2YX-X3-ydV" secondAttribute="bottom" constant="8" id="Vi9-UL-EFU"/>
+                <constraint firstItem="ZNh-JX-wsu" firstAttribute="top" secondItem="GRy-Bl-Mxn" secondAttribute="bottom" constant="8" id="Vmd-8x-Dxe"/>
+                <constraint firstItem="G0y-kJ-J8n" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="W97-F2-UDX"/>
+                <constraint firstItem="GRy-Bl-Mxn" firstAttribute="top" secondItem="7us-Ix-P1A" secondAttribute="bottom" constant="8" id="ZTb-wA-nhB"/>
+                <constraint firstItem="ZNh-JX-wsu" firstAttribute="leading" secondItem="G0y-kJ-J8n" secondAttribute="leading" id="kQE-ps-Ka1"/>
+                <constraint firstItem="n01-zp-Pbh" firstAttribute="leading" secondItem="syB-Uf-JrJ" secondAttribute="leading" id="m6k-cI-vd2"/>
+                <constraint firstItem="2YX-X3-ydV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="mnE-u3-Nix"/>
+                <constraint firstItem="syB-Uf-JrJ" firstAttribute="top" secondItem="n01-zp-Pbh" secondAttribute="bottom" constant="8" id="nom-4Z-sIA"/>
+                <constraint firstItem="syB-Uf-JrJ" firstAttribute="trailing" secondItem="7us-Ix-P1A" secondAttribute="trailing" id="puZ-q5-qWr"/>
+                <constraint firstItem="GRy-Bl-Mxn" firstAttribute="leading" secondItem="cto-db-qdu" secondAttribute="leading" id="qiJ-xW-3PK"/>
+                <constraint firstItem="2YX-X3-ydV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="wX6-lI-yLt"/>
+                <constraint firstItem="2YX-X3-ydV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yai-YB-zb1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="245" y="185"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="main">
+            <color red="0.0" green="0.68235294117647061" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

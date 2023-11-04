@@ -1,0 +1,6 @@
+framework module Pods_NinjaTodo {
+  umbrella header "Pods-NinjaTodo-umbrella.h"
+
+  export *
+  module * { export * }
+}

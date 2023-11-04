@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UnK-LP-gew">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Zjf-0p-IkY">
+            <objects>
+                <viewController storyboardIdentifier="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rns-dM-Qqn" customClass="LoginViewController" customModule="MyGames" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zjd-T0-HmO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sqm-PA-I5E">
+                                <rect key="frame" x="70" y="436" width="274" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                <connections>
+                                    <action selector="onPressReturn:" destination="rns-dM-Qqn" eventType="primaryActionTriggered" id="Mer-nl-m9f"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oM-vg-trq">
+                                <rect key="frame" x="70" y="486" width="274" height="34"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="rns-dM-Qqn" eventType="touchUpInside" id="3eC-XI-w1V"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you never register in myGames App before, use the name &quot;ninja&quot; to log in." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzZ-Fw-2Me">
+                                <rect key="frame" x="30" y="773" width="354" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naruto" translatesAutoresizingMaskIntoConstraints="NO" id="i8J-J4-Rbf">
+                                <rect key="frame" x="-49" y="84" width="512" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Sqm-PA-I5E" firstAttribute="leading" secondItem="uzA-2B-u3R" secondAttribute="leading" constant="70" id="1ff-uR-3qu"/>
+                            <constraint firstItem="qzZ-Fw-2Me" firstAttribute="trailing" secondItem="uzA-2B-u3R" secondAttribute="trailing" constant="-30" id="7u0-nD-Eue"/>
+                            <constraint firstItem="i8J-J4-Rbf" firstAttribute="top" secondItem="uzA-2B-u3R" secondAttribute="top" constant="40" id="B2x-5e-iz2"/>
+                            <constraint firstItem="i8J-J4-Rbf" firstAttribute="centerX" secondItem="uzA-2B-u3R" secondAttribute="centerX" id="FMm-7M-900"/>
+                            <constraint firstItem="Sqm-PA-I5E" firstAttribute="centerX" secondItem="uzA-2B-u3R" secondAttribute="centerX" id="G2Q-Iy-vaY"/>
+                            <constraint firstItem="2oM-vg-trq" firstAttribute="width" secondItem="Sqm-PA-I5E" secondAttribute="width" id="Ksx-m0-FHT"/>
+                            <constraint firstItem="i8J-J4-Rbf" firstAttribute="height" secondItem="zjd-T0-HmO" secondAttribute="height" multiplier="0.223214" id="NrY-o6-odb"/>
+                            <constraint firstItem="qzZ-Fw-2Me" firstAttribute="centerX" secondItem="uzA-2B-u3R" secondAttribute="centerX" id="YlL-Rb-ffn"/>
+                            <constraint firstItem="2oM-vg-trq" firstAttribute="top" secondItem="Sqm-PA-I5E" secondAttribute="bottom" constant="16" id="aj6-j6-Jgr"/>
+                            <constraint firstItem="uzA-2B-u3R" firstAttribute="bottom" secondItem="qzZ-Fw-2Me" secondAttribute="bottom" constant="48" id="amB-48-3y7"/>
+                            <constraint firstItem="2oM-vg-trq" firstAttribute="centerX" secondItem="Sqm-PA-I5E" secondAttribute="centerX" id="btq-VV-WiS"/>
+                            <constraint firstItem="uzA-2B-u3R" firstAttribute="leading" secondItem="qzZ-Fw-2Me" secondAttribute="leading" constant="-30" id="jFD-5E-d1V"/>
+                            <constraint firstItem="2oM-vg-trq" firstAttribute="height" secondItem="Sqm-PA-I5E" secondAttribute="height" id="rFS-8w-oCO"/>
+                            <constraint firstItem="Sqm-PA-I5E" firstAttribute="centerY" secondItem="uzA-2B-u3R" secondAttribute="centerY" id="yE2-77-sqG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uzA-2B-u3R"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Scd-yK-Knc"/>
+                    <connections>
+                        <outlet property="textField" destination="Sqm-PA-I5E" id="PAa-Jh-AXP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwb-7x-rFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073.913043478261" y="188.83928571428569"/>
+        </scene>
+        <!--Login Container View Controller-->
+        <scene sceneID="A4U-YX-Ood">
+            <objects>
+                <viewController id="JVg-Tn-jax" customClass="LoginContainerViewController" customModule="MyGames" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iOw-mT-Awn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXI-8f-ixp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dXI-8f-ixp" firstAttribute="bottom" secondItem="iOw-mT-Awn" secondAttribute="bottom" id="Gaq-uH-8ZS"/>
+                            <constraint firstItem="dXI-8f-ixp" firstAttribute="leading" secondItem="iOw-mT-Awn" secondAttribute="leading" id="l04-5I-ZNl"/>
+                            <constraint firstAttribute="trailing" secondItem="dXI-8f-ixp" secondAttribute="trailing" id="mJh-rT-xoa"/>
+                            <constraint firstAttribute="top" secondItem="dXI-8f-ixp" secondAttribute="top" id="nld-pm-PJD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FKJ-uW-YDg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RfQ-cD-YZu"/>
+                    <connections>
+                        <outlet property="containerView" destination="dXI-8f-ixp" id="N1P-Uu-MFV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfs-nd-9Xh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528.985507246377" y="-522.32142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Fs-t2-AQ2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UnK-LP-gew" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kHm-92-RiB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JVg-Tn-jax" kind="relationship" relationship="rootViewController" id="weA-6O-Ca8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L90-Id-fAj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618.84057971014499" y="-522.32142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="naruto" width="512" height="288"/>
+    </resources>
+</document>

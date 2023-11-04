@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7315515224AABD1100455E6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7315515124AABD1100455E6E /* AppDelegate.swift */; };
+		7315515424AABD1100455E6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7315515324AABD1100455E6E /* SceneDelegate.swift */; };
+		7315515624AABD1100455E6E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7315515524AABD1100455E6E /* AuthViewController.swift */; };
+		7315515924AABD1100455E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7315515724AABD1100455E6E /* Main.storyboard */; };
+		7315515B24AABD1300455E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7315515A24AABD1300455E6E /* Assets.xcassets */; };
+		7315515E24AABD1300455E6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7315515C24AABD1300455E6E /* LaunchScreen.storyboard */; };
+		73158D0D24AE13C300E8ABA4 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73158D0B24AE13C300E8ABA4 /* EditTaskViewController.swift */; };
+		73158D0E24AE13C300E8ABA4 /* EditTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73158D0C24AE13C300E8ABA4 /* EditTaskViewController.xib */; };
+		73158D1024AE16B800E8ABA4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73158D0F24AE16B800E8ABA4 /* HomeViewController.swift */; };
+		73158D1224AE2A0500E8ABA4 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73158D1124AE2A0500E8ABA4 /* TaskTableViewCell.swift */; };
+		733E5F3524AB8D9A00FF532C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 733E5F3424AB8D9A00FF532C /* Home.storyboard */; };
+		7392AD3B24AB424200DCC11B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7392AD3A24AB424200DCC11B /* Constants.swift */; };
+		7392AD3D24AB428600DCC11B /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7392AD3C24AB428600DCC11B /* DB.swift */; };
+		7392AD3F24AB44FE00DCC11B /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7392AD3E24AB44FE00DCC11B /* Auth.swift */; };
+		7392AD4424AB492700DCC11B /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7392AD4324AB492700DCC11B /* OnBoarding.storyboard */; };
+		7392AD4624AB4A2D00DCC11B /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7392AD4524AB4A2D00DCC11B /* OnBoardingViewController.swift */; };
+		7392AD4924AB4FE900DCC11B /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7392AD4724AB4FE900DCC11B /* OnBoardingCollectionViewCell.swift */; };
+		7392AD4A24AB4FE900DCC11B /* OnBoardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7392AD4824AB4FE900DCC11B /* OnBoardingCollectionViewCell.xib */; };
+		7392AD4D24AB559B00DCC11B /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7392AD4C24AB559B00DCC11B /* Page.swift */; };
+		73F343C424AB67B900FFBF9E /* animation2.json in Resources */ = {isa = PBXBuildFile; fileRef = 73F343C124AB67B900FFBF9E /* animation2.json */; };
+		73F343C524AB67B900FFBF9E /* animation1.json in Resources */ = {isa = PBXBuildFile; fileRef = 73F343C224AB67B900FFBF9E /* animation1.json */; };
+		73F343C624AB67B900FFBF9E /* animation3.json in Resources */ = {isa = PBXBuildFile; fileRef = 73F343C324AB67B900FFBF9E /* animation3.json */; };
+		7FEA6894E591A1E380850C4D /* Pods_NinjaTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B768DCAB2FA72541AF75050 /* Pods_NinjaTodo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5161AD9B6C4EF4DBB27F9270 /* Pods-NinjaTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NinjaTodo.release.xcconfig"; path = "Target Support Files/Pods-NinjaTodo/Pods-NinjaTodo.release.xcconfig"; sourceTree = "<group>"; };
+		5B768DCAB2FA72541AF75050 /* Pods_NinjaTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NinjaTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7315514E24AABD1100455E6E /* NinjaTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinjaTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7315515124AABD1100455E6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7315515324AABD1100455E6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7315515524AABD1100455E6E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		7315515824AABD1100455E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7315515A24AABD1300455E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7315515D24AABD1300455E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7315515F24AABD1300455E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73158D0B24AE13C300E8ABA4 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
+		73158D0C24AE13C300E8ABA4 /* EditTaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditTaskViewController.xib; sourceTree = "<group>"; };
+		73158D0F24AE16B800E8ABA4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		73158D1124AE2A0500E8ABA4 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		733E5F3424AB8D9A00FF532C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		7392AD3A24AB424200DCC11B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7392AD3C24AB428600DCC11B /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		7392AD3E24AB44FE00DCC11B /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		7392AD4324AB492700DCC11B /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		7392AD4524AB4A2D00DCC11B /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		7392AD4724AB4FE900DCC11B /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		7392AD4824AB4FE900DCC11B /* OnBoardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		7392AD4C24AB559B00DCC11B /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		73F343C124AB67B900FFBF9E /* animation2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation2.json; sourceTree = "<group>"; };
+		73F343C224AB67B900FFBF9E /* animation1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation1.json; sourceTree = "<group>"; };
+		73F343C324AB67B900FFBF9E /* animation3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation3.json; sourceTree = "<group>"; };
+		93F3BBA2E6195151547A06F6 /* Pods-NinjaTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NinjaTodo.debug.xcconfig"; path = "Target Support Files/Pods-NinjaTodo/Pods-NinjaTodo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7315514B24AABD1100455E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FEA6894E591A1E380850C4D /* Pods_NinjaTodo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63D6EB72F71EE75BD4B33EAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93F3BBA2E6195151547A06F6 /* Pods-NinjaTodo.debug.xcconfig */,
+				5161AD9B6C4EF4DBB27F9270 /* Pods-NinjaTodo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7315514524AABD1100455E6E = {
+			isa = PBXGroup;
+			children = (
+				7315515024AABD1100455E6E /* NinjaTodo */,
+				7315514F24AABD1100455E6E /* Products */,
+				63D6EB72F71EE75BD4B33EAD /* Pods */,
+				D9BB068773D64DBC47A36B03 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7315514F24AABD1100455E6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7315514E24AABD1100455E6E /* NinjaTodo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7315515024AABD1100455E6E /* NinjaTodo */ = {
+			isa = PBXGroup;
+			children = (
+				73F343C024AB653F00FFBF9E /* animations */,
+				7392AD4024AB487700DCC11B /* features */,
+				7392AD3924AB422E00DCC11B /* utils */,
+				7315515A24AABD1300455E6E /* Assets.xcassets */,
+				7315515124AABD1100455E6E /* AppDelegate.swift */,
+				7315515324AABD1100455E6E /* SceneDelegate.swift */,
+				7315515F24AABD1300455E6E /* Info.plist */,
+			);
+			path = NinjaTodo;
+			sourceTree = "<group>";
+		};
+		73158D0A24AE138300E8ABA4 /* addeditTask */ = {
+			isa = PBXGroup;
+			children = (
+				73158D0B24AE13C300E8ABA4 /* EditTaskViewController.swift */,
+				73158D0C24AE13C300E8ABA4 /* EditTaskViewController.xib */,
+			);
+			path = addeditTask;
+			sourceTree = "<group>";
+		};
+		733E5F3324AB83A000FF532C /* tasks */ = {
+			isa = PBXGroup;
+			children = (
+				733E5F3424AB8D9A00FF532C /* Home.storyboard */,
+				73158D0F24AE16B800E8ABA4 /* HomeViewController.swift */,
+				73158D1124AE2A0500E8ABA4 /* TaskTableViewCell.swift */,
+			);
+			path = tasks;
+			sourceTree = "<group>";
+		};
+		7392AD3924AB422E00DCC11B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7392AD3A24AB424200DCC11B /* Constants.swift */,
+				7392AD3C24AB428600DCC11B /* DB.swift */,
+				7392AD3E24AB44FE00DCC11B /* Auth.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		7392AD4024AB487700DCC11B /* features */ = {
+			isa = PBXGroup;
+			children = (
+				7315515C24AABD1300455E6E /* LaunchScreen.storyboard */,
+				7392AD4124AB487F00DCC11B /* onboarding */,
+				7392AD4224AB48A600DCC11B /* auth */,
+				733E5F3324AB83A000FF532C /* tasks */,
+				73158D0A24AE138300E8ABA4 /* addeditTask */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		7392AD4124AB487F00DCC11B /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				7392AD4F24AB55C400DCC11B /* view */,
+				7392AD4E24AB55BD00DCC11B /* controller */,
+				7392AD4B24AB558C00DCC11B /* model */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		7392AD4224AB48A600DCC11B /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				7315515524AABD1100455E6E /* AuthViewController.swift */,
+				7315515724AABD1100455E6E /* Main.storyboard */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		7392AD4B24AB558C00DCC11B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7392AD4C24AB559B00DCC11B /* Page.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7392AD4E24AB55BD00DCC11B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7392AD4524AB4A2D00DCC11B /* OnBoardingViewController.swift */,
+				7392AD4724AB4FE900DCC11B /* OnBoardingCollectionViewCell.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		7392AD4F24AB55C400DCC11B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7392AD4324AB492700DCC11B /* OnBoarding.storyboard */,
+				7392AD4824AB4FE900DCC11B /* OnBoardingCollectionViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		73F343C024AB653F00FFBF9E /* animations */ = {
+			isa = PBXGroup;
+			children = (
+				73F343C224AB67B900FFBF9E /* animation1.json */,
+				73F343C124AB67B900FFBF9E /* animation2.json */,
+				73F343C324AB67B900FFBF9E /* animation3.json */,
+			);
+			path = animations;
+			sourceTree = "<group>";
+		};
+		D9BB068773D64DBC47A36B03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B768DCAB2FA72541AF75050 /* Pods_NinjaTodo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7315514D24AABD1100455E6E /* NinjaTodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7315516224AABD1300455E6E /* Build configuration list for PBXNativeTarget "NinjaTodo" */;
+			buildPhases = (
+				D905CADABF4FEE6E1D9DB3D7 /* [CP] Check Pods Manifest.lock */,
+				7315514A24AABD1100455E6E /* Sources */,
+				7315514B24AABD1100455E6E /* Frameworks */,
+				7315514C24AABD1100455E6E /* Resources */,
+				43230D4B212A674347583D87 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NinjaTodo;
+			productName = NinjaTodo;
+			productReference = 7315514E24AABD1100455E6E /* NinjaTodo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7315514624AABD1100455E6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Will Felix";
+				TargetAttributes = {
+					7315514D24AABD1100455E6E = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 7315514924AABD1100455E6E /* Build configuration list for PBXProject "NinjaTodo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7315514524AABD1100455E6E;
+			productRefGroup = 7315514F24AABD1100455E6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7315514D24AABD1100455E6E /* NinjaTodo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7315514C24AABD1100455E6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F343C524AB67B900FFBF9E /* animation1.json in Resources */,
+				73158D0E24AE13C300E8ABA4 /* EditTaskViewController.xib in Resources */,
+				7315515E24AABD1300455E6E /* LaunchScreen.storyboard in Resources */,
+				73F343C624AB67B900FFBF9E /* animation3.json in Resources */,
+				733E5F3524AB8D9A00FF532C /* Home.storyboard in Resources */,
+				73F343C424AB67B900FFBF9E /* animation2.json in Resources */,
+				7392AD4A24AB4FE900DCC11B /* OnBoardingCollectionViewCell.xib in Resources */,
+				7315515B24AABD1300455E6E /* Assets.xcassets in Resources */,
+				7392AD4424AB492700DCC11B /* OnBoarding.storyboard in Resources */,
+				7315515924AABD1100455E6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43230D4B212A674347583D87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NinjaTodo/Pods-NinjaTodo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NinjaTodo/Pods-NinjaTodo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NinjaTodo/Pods-NinjaTodo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D905CADABF4FEE6E1D9DB3D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NinjaTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7315514A24AABD1100455E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7315515624AABD1100455E6E /* AuthViewController.swift in Sources */,
+				73158D1024AE16B800E8ABA4 /* HomeViewController.swift in Sources */,
+				73158D0D24AE13C300E8ABA4 /* EditTaskViewController.swift in Sources */,
+				7315515224AABD1100455E6E /* AppDelegate.swift in Sources */,
+				7392AD4624AB4A2D00DCC11B /* OnBoardingViewController.swift in Sources */,
+				7392AD4924AB4FE900DCC11B /* OnBoardingCollectionViewCell.swift in Sources */,
+				7315515424AABD1100455E6E /* SceneDelegate.swift in Sources */,
+				7392AD4D24AB559B00DCC11B /* Page.swift in Sources */,
+				73158D1224AE2A0500E8ABA4 /* TaskTableViewCell.swift in Sources */,
+				7392AD3D24AB428600DCC11B /* DB.swift in Sources */,
+				7392AD3B24AB424200DCC11B /* Constants.swift in Sources */,
+				7392AD3F24AB44FE00DCC11B /* Auth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7315515724AABD1100455E6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7315515824AABD1100455E6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7315515C24AABD1300455E6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7315515D24AABD1300455E6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7315516024AABD1300455E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7315516124AABD1300455E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7315516324AABD1300455E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F3BBA2E6195151547A06F6 /* Pods-NinjaTodo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ESLB52RX3F;
+				INFOPLIST_FILE = NinjaTodo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.willfelix.NinjaTodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7315516424AABD1300455E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5161AD9B6C4EF4DBB27F9270 /* Pods-NinjaTodo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ESLB52RX3F;
+				INFOPLIST_FILE = NinjaTodo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.willfelix.NinjaTodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7315514924AABD1100455E6E /* Build configuration list for PBXProject "NinjaTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7315516024AABD1300455E6E /* Debug */,
+				7315516124AABD1300455E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7315516224AABD1300455E6E /* Build configuration list for PBXNativeTarget "NinjaTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7315516324AABD1300455E6E /* Debug */,
+				7315516424AABD1300455E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7315514624AABD1100455E6E /* Project object */;
+}

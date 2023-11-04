@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController" customModule="MyGames" customModuleProvider="target">
+            <connections>
+                <outlet property="ivCover" destination="TUN-eg-ULw" id="4JD-Np-pwz"/>
+                <outlet property="lbConsole" destination="d6K-Jy-j2V" id="hPx-lV-6Qt"/>
+                <outlet property="lbReleaseDate" destination="VGK-8T-Ny8" id="ce9-OK-wSn"/>
+                <outlet property="lbTitle" destination="yJy-Qx-1Oc" id="vbc-Ck-ADj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título do game" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJy-Qx-1Oc">
+                    <rect key="frame" x="16" y="77" width="382" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <color key="textColor" name="main"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="TUN-eg-ULw">
+                    <rect key="frame" x="16" y="180" width="382" height="639"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data lançamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGK-8T-Ny8">
+                    <rect key="frame" x="16" y="143" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plataforma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6K-Jy-j2V">
+                    <rect key="frame" x="16" y="114" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="yJy-Qx-1Oc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KWk-5a-1Pv"/>
+                <constraint firstItem="VGK-8T-Ny8" firstAttribute="trailing" secondItem="TUN-eg-ULw" secondAttribute="trailing" id="NiN-Jd-sfL"/>
+                <constraint firstItem="d6K-Jy-j2V" firstAttribute="leading" secondItem="VGK-8T-Ny8" secondAttribute="leading" id="ORc-h7-wgo"/>
+                <constraint firstItem="yJy-Qx-1Oc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="QDo-YO-FaU"/>
+                <constraint firstItem="yJy-Qx-1Oc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="33" id="URh-W5-zXN"/>
+                <constraint firstItem="yJy-Qx-1Oc" firstAttribute="leading" secondItem="d6K-Jy-j2V" secondAttribute="leading" id="Ugo-9z-KyK"/>
+                <constraint firstItem="d6K-Jy-j2V" firstAttribute="top" secondItem="yJy-Qx-1Oc" secondAttribute="bottom" constant="8" id="ZQC-qK-Kap"/>
+                <constraint firstItem="VGK-8T-Ny8" firstAttribute="leading" secondItem="TUN-eg-ULw" secondAttribute="leading" id="lMb-yZ-puW"/>
+                <constraint firstItem="d6K-Jy-j2V" firstAttribute="trailing" secondItem="VGK-8T-Ny8" secondAttribute="trailing" id="mlu-Qb-Gvw"/>
+                <constraint firstItem="VGK-8T-Ny8" firstAttribute="top" secondItem="d6K-Jy-j2V" secondAttribute="bottom" constant="8" id="qQ2-eV-Tkf"/>
+                <constraint firstItem="yJy-Qx-1Oc" firstAttribute="trailing" secondItem="d6K-Jy-j2V" secondAttribute="trailing" id="rNc-J8-601"/>
+                <constraint firstItem="TUN-eg-ULw" firstAttribute="top" secondItem="VGK-8T-Ny8" secondAttribute="bottom" constant="16" id="xWl-fR-Xu6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TUN-eg-ULw" secondAttribute="bottom" constant="43" id="zQk-sP-166"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="main">
+            <color red="0.0" green="0.68235294117647061" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

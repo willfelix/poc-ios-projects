@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="game_collection_cell" id="gTV-IL-0wX" customClass="GameCollectionViewCell" customModule="MyGames" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título do game aqui Título do game aqui Título do game aqui Título do game aqui" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsQ-oI-pxN" userLabel="Lbl Title">
+                        <rect key="frame" x="81" y="13.5" width="325" height="41.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZCU-4K-Ozf">
+                        <rect key="frame" x="8" y="13.5" width="65" height="73"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="73" id="CR9-uN-geN"/>
+                            <constraint firstAttribute="width" constant="65" id="h5i-LR-aO2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do console aqui" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bh9-1j-iUb" userLabel="Lbl Console">
+                        <rect key="frame" x="81" y="59" width="325" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="vbc-Gq-ivC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Bh9-1j-iUb" secondAttribute="bottom" constant="20" id="3Az-TO-S0O"/>
+                <constraint firstItem="ZCU-4K-Ozf" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="9sZ-Le-5fv"/>
+                <constraint firstItem="KsQ-oI-pxN" firstAttribute="trailing" secondItem="Bh9-1j-iUb" secondAttribute="trailing" id="J0F-Yd-cCI"/>
+                <constraint firstItem="KsQ-oI-pxN" firstAttribute="leading" secondItem="ZCU-4K-Ozf" secondAttribute="trailing" constant="8" id="kQz-D6-bih"/>
+                <constraint firstItem="ZCU-4K-Ozf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="lx5-fA-7uF"/>
+                <constraint firstItem="KsQ-oI-pxN" firstAttribute="top" secondItem="ZCU-4K-Ozf" secondAttribute="top" id="nvq-h0-mSx"/>
+                <constraint firstItem="Bh9-1j-iUb" firstAttribute="leading" secondItem="ZCU-4K-Ozf" secondAttribute="trailing" constant="8" id="pvy-HZ-GYM"/>
+                <constraint firstItem="Bh9-1j-iUb" firstAttribute="top" secondItem="KsQ-oI-pxN" secondAttribute="bottom" constant="4" id="rLg-82-wlQ"/>
+                <constraint firstAttribute="trailing" secondItem="KsQ-oI-pxN" secondAttribute="trailing" constant="8" id="rrR-rG-uUM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="consoleLbl" destination="Bh9-1j-iUb" id="C38-kv-WCj"/>
+                <outlet property="imageView" destination="ZCU-4K-Ozf" id="duu-io-BWO"/>
+                <outlet property="titleLbl" destination="KsQ-oI-pxN" id="Ilt-R7-9NT"/>
+            </connections>
+            <point key="canvasLocation" x="106" y="25"/>
+        </collectionViewCell>
+    </objects>
+</document>

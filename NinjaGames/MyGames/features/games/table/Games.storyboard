@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JoA-rg-KOM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Jogos-->
+        <scene sceneID="di0-jW-4b6">
+            <objects>
+                <tableViewController id="SEd-aG-KO0" customClass="GamesTableViewController" customModule="MyGames" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qor-Ub-tKH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="game_table_cell" rowHeight="100" id="hsd-ba-uzf" customClass="GameTableViewCell" customModule="MyGames" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hsd-ba-uzf" id="8Aj-R8-jHp">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ugX-fj-Y2W">
+                                            <rect key="frame" x="8" y="10" width="65" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="73" id="WFa-DX-CKZ"/>
+                                                <constraint firstAttribute="width" constant="65" id="WXG-DL-XsH"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título do game aqui Título do game aqui Título do game aqui Título do game aqui" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3f-jI-KIW" userLabel="Lbl Title">
+                                            <rect key="frame" x="81" y="10" width="325" height="45.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do console aqui" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVn-We-bu8" userLabel="Lbl Console">
+                                            <rect key="frame" x="81" y="59.5" width="325" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="AVn-We-bu8" secondAttribute="trailing" constant="8" id="0V5-qq-Po7"/>
+                                        <constraint firstItem="c3f-jI-KIW" firstAttribute="leading" secondItem="ugX-fj-Y2W" secondAttribute="trailing" constant="8" id="6xx-hi-7pl"/>
+                                        <constraint firstAttribute="trailing" secondItem="c3f-jI-KIW" secondAttribute="trailing" constant="8" id="7nb-P5-VpL"/>
+                                        <constraint firstItem="ugX-fj-Y2W" firstAttribute="top" secondItem="8Aj-R8-jHp" secondAttribute="top" constant="10" id="CW6-7A-Kaf"/>
+                                        <constraint firstItem="AVn-We-bu8" firstAttribute="top" secondItem="c3f-jI-KIW" secondAttribute="bottom" constant="4" id="HJb-og-Tpv"/>
+                                        <constraint firstItem="AVn-We-bu8" firstAttribute="leading" secondItem="ugX-fj-Y2W" secondAttribute="trailing" constant="8" id="OiD-nN-o5P"/>
+                                        <constraint firstItem="c3f-jI-KIW" firstAttribute="top" secondItem="ugX-fj-Y2W" secondAttribute="top" id="Tf7-AE-BYr"/>
+                                        <constraint firstAttribute="bottom" secondItem="ugX-fj-Y2W" secondAttribute="bottom" constant="10" id="UiE-XP-TOh"/>
+                                        <constraint firstItem="ugX-fj-Y2W" firstAttribute="leading" secondItem="8Aj-R8-jHp" secondAttribute="leading" constant="8" id="ZQl-SC-NJa"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ivCover" destination="ugX-fj-Y2W" id="ESs-BF-IaE"/>
+                                    <outlet property="lbConsole" destination="AVn-We-bu8" id="QCh-OA-6bo"/>
+                                    <outlet property="lbTitle" destination="c3f-jI-KIW" id="V3G-TI-1Bh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SEd-aG-KO0" id="0GZ-ee-GjO"/>
+                            <outlet property="delegate" destination="SEd-aG-KO0" id="LMt-bL-yHi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Jogos" leftItemsSupplementBackButton="YES" id="VWF-4P-UPL">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="fs9-KI-Apq">
+                            <connections>
+                                <action selector="logout:" destination="SEd-aG-KO0" id="zor-r9-IDZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SYO-E9-bqV">
+                            <connections>
+                                <action selector="addGame:" destination="SEd-aG-KO0" id="Q52-Ya-hvG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5MS-Bc-ZLE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="-288"/>
+        </scene>
+        <!--Jogos-->
+        <scene sceneID="HAz-Ef-pQ7">
+            <objects>
+                <navigationController id="JoA-rg-KOM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Jogos" image="game" id="aqn-Jo-rrP"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Kh1-vJ-zgn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="main"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="main"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SEd-aG-KO0" kind="relationship" relationship="rootViewController" id="Pc6-DC-NR0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9eS-lD-Lbp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-503" y="-288"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="game" width="23" height="23"/>
+        <namedColor name="main">
+            <color red="0.0" green="0.68235294117647061" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
